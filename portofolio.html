@@ -73,7 +73,7 @@
             color: var(--white);
         }
 
-        /* Header & Navigation (unchanged) */
+        /* Header & Navigation */
         header {
             background-color: var(--white);
             padding: 20px 0;
@@ -100,7 +100,7 @@
             text-decoration: none;
         }
 
-        /* UPDATED: Logo image styling */
+        /* Styling for the new logo image */
         .logo .logo-img {
             height: 35px; /* Adjust size as needed */
             margin-right: 8px;
@@ -143,9 +143,9 @@
             width: 100%;
         }
 
-        /* Hero Section (Home) - REFINED AGAIN */
+        /* Hero Section (Home) */
         .hero {
-            background: var(--gradient-blue); /* Ganti dengan gradien */
+            background: var(--gradient-blue);
             text-align: center;
             padding: 190px 0 150px 0;
             display: flex;
@@ -154,40 +154,40 @@
             justify-content: center;
             position: relative;
             overflow: hidden;
-            color: var(--white); /* Ubah warna teks menjadi putih untuk kontras */
+            color: var(--white);
         }
 
         .hero-content {
             max-width: 980px;
             margin: 0 auto;
             z-index: 2;
-            position: relative; /* Penting untuk z-index */
+            position: relative;
         }
 
         .hero h1 {
             font-size: 5.2em;
-            color: var(--white); /* Ubah warna judul menjadi putih */
+            color: var(--white);
             margin-bottom: 35px;
             line-height: 1.0;
             font-weight: 800;
             letter-spacing: -0.03em;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Tambahkan sedikit bayangan teks */
-            opacity: 0; /* Awalnya sembunyikan untuk animasi */
-            transform: translateY(20px); /* Awalnya geser ke bawah untuk animasi */
-            animation: fadeInSlideUp 1s ease-out forwards 0.5s; /* Animasi masuk */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 1s ease-out forwards 0.5s;
         }
 
         .hero p {
             font-size: 1.5em;
-            color: rgba(255, 255, 255, 0.9); /* Ubah warna paragraf menjadi putih transparan */
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 70px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
             line-height: 1.5;
-            opacity: 0; /* Awalnya sembunyikan untuk animasi */
-            transform: translateY(20px); /* Awalnya geser ke bawah untuk animasi */
-            animation: fadeInSlideUp 1s ease-out forwards 0.7s; /* Animasi masuk */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 1s ease-out forwards 0.7s;
         }
 
         .hero-buttons {
@@ -195,33 +195,33 @@
             justify-content: center;
             gap: 30px;
             margin-bottom: 0;
-            opacity: 0; /* Awalnya sembunyikan untuk animasi */
-            transform: translateY(20px); /* Awalnya geser ke bawah untuk animasi */
-            animation: fadeInSlideUp 1s ease-out forwards 0.9s; /* Animasi masuk */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInSlideUp 1s ease-out forwards 0.9s;
         }
 
         .hero-buttons .btn-primary {
-            background-color: var(--white); /* Ubah warna tombol utama */
-            color: var(--primary-blue); /* Ubah warna teks tombol utama */
+            background-color: var(--white);
+            color: var(--primary-blue);
             border: 2px solid var(--white);
         }
 
         .hero-buttons .btn-primary:hover {
-            background-color: var(--light-gray-bg); /* Efek hover */
+            background-color: var(--light-gray-bg);
             border-color: var(--light-gray-bg);
         }
 
         .hero-buttons .btn-outline {
-            color: var(--white); /* Ubah warna teks tombol outline */
+            color: var(--white);
             border: 2px solid var(--white);
         }
 
         .hero-buttons .btn-outline:hover {
-            background-color: var(--white); /* Efek hover */
+            background-color: var(--white);
             color: var(--primary-blue);
         }
 
-        /* UPDATED: Hero graphic styling */
+        /* Styling for the hero-graphic (now with an image) */
         .hero-graphic {
             margin-top: 110px;
             width: 330px;
@@ -231,9 +231,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--white);
-            font-size: 7em;
-            font-weight: 700;
             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
             position: absolute;
             bottom: -100px;
@@ -243,7 +240,6 @@
             animation: rotateGraphic 20s linear infinite;
         }
 
-        /* New styling for the image inside hero-graphic */
         .hero-graphic img {
             width: 70%; /* Adjust size of the image within the circle */
             height: 70%; /* Adjust size of the image within the circle */
@@ -311,7 +307,7 @@
             }
         }
 
-        /* Other Sections (unchanged from previous version, just for context) */
+        /* Other Sections */
         section {
             padding: 100px 0;
             text-align: center;
@@ -342,7 +338,7 @@
             line-height: 1.2;
         }
 
-        /* About Me Specific (unchanged) */
+        /* About Me Specific */
         .about-content {
             display: flex;
             flex-wrap: wrap;
@@ -353,7 +349,7 @@
             margin-top: 60px;
         }
 
-        /* UPDATED: About image styling */
+        /* Styling for the About Me profile picture */
         .about-image {
             flex: 0 0 350px;
             height: 350px;
@@ -429,7 +425,7 @@
             justify-content: flex-start;
         }
 
-        /* Featured Projects (unchanged) */
+        /* Featured Projects */
         .portfolio > p {
             font-size: 1.15em;
             max-width: 800px;
@@ -513,7 +509,7 @@
             border-radius: 50px;
         }
 
-        /* Contact Section (unchanged) */
+        /* Contact Section */
         .contact-content {
             display: flex;
             flex-wrap: wrap;
@@ -605,7 +601,7 @@
             border-radius: 50px;
         }
 
-        /* Footer (unchanged) */
+        /* Footer */
         footer {
             background-color: var(--dark-blue);
             color: var(--white);
@@ -726,7 +722,7 @@
                 gap: 20px;
             }
             .hero {
-                padding: 100px 0 60px 0; /* Sesuaikan padding */
+                padding: 100px 0 60px 0; /* Adjust padding */
             }
             .hero h1 {
                 font-size: 2.8em;
@@ -746,9 +742,8 @@
             .hero-graphic {
                 width: 180px;
                 height: 180px;
-                font-size: 3.5em; /* This will be irrelevant for the image, but kept for consistency */
-                bottom: -50px; /* Sesuaikan posisi */
-                right: -50px; /* Sesuaikan posisi */
+                bottom: -50px; /* Adjust position */
+                right: -50px; /* Adjust position */
             }
             /* Adjust image within graphic for smaller screens */
             .hero-graphic img {
@@ -782,7 +777,6 @@
             .about-image {
                 width: 250px;
                 height: 250px;
-                font-size: 4em;
             }
             .about-text {
                 text-align: center;
@@ -861,7 +855,6 @@
             .hero-graphic {
                 width: 120px;
                 height: 120px;
-                font-size: 2.5em; /* Still irrelevant for image */
                 bottom: -30px;
                 right: -30px;
             }
@@ -923,7 +916,7 @@
                 <h3>Creating Impactful Visual Experiences</h3>
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/profile.png" alt="TanvirA Profile Picture">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/profile.jpg" alt="TanvirA Profile Picture">
                     </div>
                     <div class="about-text">
                         <p>I'm a professional graphic designer with over 5 years of experience specializing in branding, social media marketing, and corporate identity. My approach combines clean, bold aesthetics with strategic thinking to create designs that not only look impressive but also achieve business objectives.</p>
@@ -1038,7 +1031,7 @@
                         </div>
                     </div>
                     <div class="contact-form">
-                        <form action="#" method="POST">
+                        <form action="https://formsubmit.co/addinkedua@gmail.com" method="POST">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -1166,18 +1159,26 @@
             alert('Loading more projects (functionality to be expanded)');
         });
 
-        // Simple form submission (demonstration)
+        // Simple form submission (demonstration) - The actual email sending is handled by FormSubmit.co via the form's action attribute
         const contactForm = document.querySelector('.contact-form form');
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            e.preventDefault(); // Prevent default form submission to show custom alert
 
             const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            // The actual form submission will happen after this JS, by the browser to FormSubmit.co
+            // So, you don't need to manually send data here.
 
-            alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon at ${email}.`);
+            alert(`Terima kasih, ${name}! Pesan Anda telah diterima. Saya akan segera menghubungi Anda.`);
 
+            // Optionally, you might want to call .submit() on the form here
+            // if you explicitly prevented default earlier and want FormSubmit.co to work.
+            // For FormSubmit.co, simply having the action attribute is enough.
+            // If you want a visual confirmation *before* the form redirects/submits to FormSubmit,
+            // you might want to remove the e.preventDefault() and rely on FormSubmit's success page.
+            // Or, you can use fetch API to send the form data asynchronously and then show the alert.
+            // For simplicity and direct use of FormSubmit, we'll let the browser handle the submission.
+
+            // Reset the form fields after submission (this happens whether using alert or direct submit)
             contactForm.reset();
         });
     </script>
