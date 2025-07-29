@@ -221,11 +221,12 @@
             color: var(--primary-blue);
         }
 
+        /* UPDATED: Hero graphic styling */
         .hero-graphic {
             margin-top: 110px;
             width: 330px;
             height: 330px;
-            background-color: rgba(255, 255, 255, 0.15); /* Ubah warna menjadi transparan */
+            background-color: rgba(255, 255, 255, 0.15);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -233,13 +234,22 @@
             color: var(--white);
             font-size: 7em;
             font-weight: 700;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* Perkuat bayangan */
-            position: absolute; /* Posisikan absolut */
-            bottom: -100px; /* Geser ke bawah agar sebagian tersembunyi */
-            right: -100px; /* Geser ke kanan agar sebagian tersembunyi */
-            z-index: 1; /* Pastikan di bawah konten teks */
-            opacity: 0.3; /* Kurangi opasitas */
-            animation: rotateGraphic 20s linear infinite; /* Animasi rotasi */
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+            z-index: 1;
+            opacity: 0.3;
+            animation: rotateGraphic 20s linear infinite;
+        }
+
+        /* New styling for the image inside hero-graphic */
+        .hero-graphic img {
+            width: 70%; /* Adjust size of the image within the circle */
+            height: 70%; /* Adjust size of the image within the circle */
+            object-fit: contain; /* Ensure the entire image is visible */
+            border-radius: 50%; /* Keep it circular */
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Subtle glow for visibility */
         }
 
         /* New: Decorative elements for hero section */
@@ -736,9 +746,14 @@
             .hero-graphic {
                 width: 180px;
                 height: 180px;
-                font-size: 3.5em;
+                font-size: 3.5em; /* This will be irrelevant for the image, but kept for consistency */
                 bottom: -50px; /* Sesuaikan posisi */
                 right: -50px; /* Sesuaikan posisi */
+            }
+            /* Adjust image within graphic for smaller screens */
+            .hero-graphic img {
+                width: 70%;
+                height: 70%;
             }
             .hero::before {
                 width: 250px;
@@ -846,9 +861,14 @@
             .hero-graphic {
                 width: 120px;
                 height: 120px;
-                font-size: 2.5em;
+                font-size: 2.5em; /* Still irrelevant for image */
                 bottom: -30px;
                 right: -30px;
+            }
+            /* Adjust image within graphic for smaller screens */
+            .hero-graphic img {
+                width: 70%;
+                height: 70%;
             }
             .hero::before {
                 width: 180px;
@@ -892,7 +912,9 @@
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-graphic">TA</div>
+            <div class="hero-graphic">
+                <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/logo.png" alt="TanvirA Logo Graphic">
+            </div>
         </section>
 
         <section id="about" class="about-me">
