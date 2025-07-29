@@ -470,10 +470,10 @@
             box-shadow: 0 8px 18px rgba(0,0,0,0.1);
             text-align: left;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            min-height: 380px; /* Ditambahkan: Memberi ruang untuk gambar persegi + info */
-            display: flex; /* Ditambahkan: Menggunakan flexbox untuk tata letak internal */
-            flex-direction: column; /* Konten di dalam kartu ditata secara kolom */
-            justify-content: space-between; /* Untuk mendorong info ke bawah jika gambar lebih pendek */
+            min-height: 380px; /* Memberi ruang untuk gambar persegi + info */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .project-card:hover {
@@ -977,71 +977,74 @@
                     <button class="filter-btn active" data-filter="all">All Projects</button>
                     <button class="filter-btn" data-filter="social-media">Social Media</button>
                     <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="advertising">Advertising</button>
+                    <button class="filter-btn" data-filter="packaging">Packaging</button>
                     <button class="filter-btn" data-filter="print-design">Print Design</button>
+                    <button class="filter-btn" data-filter="digital-design">Digital Design</button>
                 </div>
 
                 <div class="projects-grid">
-                    <div class="project-card" data-category="branding">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/1.png" alt="label product">
+                    <div class="project-card" data-categories="social-media advertising digital-design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/1.png" alt="Digital Marketing Graphic">
                         <div class="project-info">
-                            <h4>Label Product</h4>
+                            <h4>Digital Marketing Graphic</h4>
+                            <p>Social Media / Advertising / Digital</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="social-media advertising">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/2.png" alt="Pet Food Social Ad">
+                        <div class="project-info">
+                            <h4>Pet Food Social Ad</h4>
+                            <p>Social Media / Advertising</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="advertising print-design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/3.png" alt="Restaurant Food Ad">
+                        <div class="project-info">
+                            <h4>Restaurant Food Ad</h4>
+                            <p>Advertising / Print Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="advertising digital-design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/4.png" alt="Internet Service Promotion">
+                        <div class="project-info">
+                            <h4>Internet Service Promotion</h4>
+                            <p>Advertising / Digital Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="branding packaging">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/5.jpg" alt="Green Tea Product Packaging">
+                        <div class="project-info">
+                            <h4>Green Tea Product Packaging</h4>
+                            <p>Branding / Packaging Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="print-design advertising">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/6.jpg" alt="Study Abroad Program Brochure">
+                        <div class="project-info">
+                            <h4>Study Abroad Program Brochure</h4>
+                            <p>Print Design / Advertising</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="advertising digital-design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/7.jpg" alt="English Course Promotion">
+                        <div class="project-info">
+                            <h4>English Course Promotion</h4>
+                            <p>Advertising / Digital Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="branding packaging">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/8.jpg" alt="Beverage Product Packaging">
+                        <div class="project-info">
+                            <h4>Beverage Product Packaging</h4>
+                            <p>Branding / Packaging Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-categories="branding">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/projectlogo.png" alt="UP Turnidea Logo Design">
+                        <div class="project-info">
+                            <h4>UP Turnidea Logo Design</h4>
                             <p>Branding</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="social-media">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/2.png" alt="Social Media Campaign">
-                        <div class="project-info">
-                            <h4>Social Media Campaign</h4>
-                            <p>Social Media</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="print-design">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/3.png" alt="Business Card Design">
-                        <div class="project-info">
-                            <h4>Business Card Design</h4>
-                            <p>Print Design</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="branding">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/4.png" alt="Logo Design">
-                        <div class="project-info">
-                            <h4>Logo Design</h4>
-                            <p>Branding</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="social-media">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/5.png" alt="Social Media Templates">
-                        <div class="project-info">
-                            <h4>Social Media Templates</h4>
-                            <p>Social Media</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="print-design">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/6.png" alt="Corporate Brochure">
-                        <div class="project-info">
-                            <h4>Corporate Brochure</h4>
-                            <p>Print Design</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="print-design">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/7.png" alt="Corporate Brochure">
-                        <div class="project-info">
-                            <h4>Corporate Brochure</h4>
-                            <p>Print Design</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="print-design">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/8.png" alt="Corporate Brochure">
-                        <div class="project-info">
-                            <h4>Corporate Brochure</h4>
-                            <p>Print Design</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="print-design">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/label.png" alt="Corporate Brochure">
-                        <div class="project-info">
-                            <h4>Corporate Brochure</h4>
-                            <p>Print Design</p>
                         </div>
                     </div>
                 </div>
@@ -1179,12 +1182,18 @@
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
 
-                const filterValue = button.getAttribute('data-filter');
+                const filterValue = button.getAttribute('data-filter'); // e.g., "social-media"
 
                 projectCards.forEach(card => {
-                    card.style.display = 'none';
-                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                        card.style.display = 'block';
+                    const cardCategories = card.getAttribute('data-categories'); // e.g., "social-media advertising"
+
+                    card.style.display = 'none'; // Hide all cards first
+
+                    if (filterValue === 'all') {
+                        card.style.display = 'flex'; // Show all if "All Projects" is selected
+                    } else if (cardCategories && cardCategories.split(' ').includes(filterValue)) {
+                        // Check if the current card's categories include the filterValue
+                        card.style.display = 'flex'; // Show card if it matches a category
                     }
                 });
             });
