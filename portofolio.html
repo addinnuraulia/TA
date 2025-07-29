@@ -470,6 +470,10 @@
             box-shadow: 0 8px 18px rgba(0,0,0,0.1);
             text-align: left;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 380px; /* Ditambahkan: Memberi ruang untuk gambar persegi + info */
+            display: flex; /* Ditambahkan: Menggunakan flexbox untuk tata letak internal */
+            flex-direction: column; /* Konten di dalam kartu ditata secara kolom */
+            justify-content: space-between; /* Untuk mendorong info ke bawah jika gambar lebih pendek */
         }
 
         .project-card:hover {
@@ -477,16 +481,22 @@
             box-shadow: 0 12px 25px rgba(0,0,0,0.15);
         }
 
+        /* MODIFIED: Membuat gambar menjadi persegi dengan aspect-ratio */
         .project-card img {
             width: 100%;
-            height: 220px;
-            object-fit: cover;
-            background-color: #d0d0d0;
+            height: auto; /* Dibuat otomatis agar aspect-ratio bisa bekerja */
+            aspect-ratio: 1 / 1; /* Ini yang membuat gambar menjadi persegi */
+            object-fit: contain; /* Memastikan seluruh gambar terlihat */
+            background-color: #d0d0d0; /* Warna latar belakang untuk area kosong */
             display: block;
         }
 
         .project-info {
             padding: 25px;
+            flex-grow: 1; /* Agar info mengisi ruang yang tersisa */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Memastikan teks info rata bawah jika gambar punya letterbox */
         }
 
         .project-info h4 {
@@ -699,6 +709,8 @@
             .projects-grid {
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             }
+            /* Menghapus penyesuaian tinggi gambar di sini karena aspect-ratio sudah digunakan */
+            /* .project-card img { height: 280px; } */
             .contact-info, .contact-form {
                 max-width: 100%;
             }
@@ -815,6 +827,8 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+            /* Menghapus penyesuaian tinggi gambar di sini karena aspect-ratio sudah digunakan */
+            /* .project-card img { height: 300px; } */
             .load-more-btn {
                 width: 80%;
                 max-width: 300px;
@@ -875,6 +889,8 @@
                 bottom: -30px;
                 left: 10px;
             }
+            /* Menghapus penyesuaian tinggi gambar di sini karena aspect-ratio sudah digunakan */
+            /* .project-card img { height: 250px; } */
         }
     </style>
 </head>
@@ -966,42 +982,63 @@
 
                 <div class="projects-grid">
                     <div class="project-card" data-category="branding">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/label.png" alt="label product">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/1.png" alt="label product">
                         <div class="project-info">
                             <h4>Label Product</h4>
                             <p>Branding</p>
                         </div>
                     </div>
                     <div class="project-card" data-category="social-media">
-                        <img src="http://via.placeholder.com/600x400/0d6efd/ffffff?text=Social+Media+Campaign" alt="Social Media Campaign">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/2.png" alt="Social Media Campaign">
                         <div class="project-info">
                             <h4>Social Media Campaign</h4>
                             <p>Social Media</p>
                         </div>
                     </div>
                     <div class="project-card" data-category="print-design">
-                        <img src="http://via.placeholder.com/600x400/0d6efd/ffffff?text=Business+Card+Design" alt="Business Card Design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/3.png" alt="Business Card Design">
                         <div class="project-info">
                             <h4>Business Card Design</h4>
                             <p>Print Design</p>
                         </div>
                     </div>
                     <div class="project-card" data-category="branding">
-                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/projectlogo.png" alt="Logo Design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/4.png" alt="Logo Design">
                         <div class="project-info">
                             <h4>Logo Design</h4>
                             <p>Branding</p>
                         </div>
                     </div>
                     <div class="project-card" data-category="social-media">
-                        <img src="http://via.placeholder.com/600x400/0d6efd/ffffff?text=Social+Media+Templates" alt="Social Media Templates">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/5.png" alt="Social Media Templates">
                         <div class="project-info">
                             <h4>Social Media Templates</h4>
                             <p>Social Media</p>
                         </div>
                     </div>
                     <div class="project-card" data-category="print-design">
-                        <img src="http://via.placeholder.com/600x400/0d6efd/ffffff?text=Corporate+Brochure" alt="Corporate Brochure">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/6.png" alt="Corporate Brochure">
+                        <div class="project-info">
+                            <h4>Corporate Brochure</h4>
+                            <p>Print Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="print-design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/7.png" alt="Corporate Brochure">
+                        <div class="project-info">
+                            <h4>Corporate Brochure</h4>
+                            <p>Print Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="print-design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/8.png" alt="Corporate Brochure">
+                        <div class="project-info">
+                            <h4>Corporate Brochure</h4>
+                            <p>Print Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="print-design">
+                        <img src="https://raw.githubusercontent.com/addinnuraulia/TA/refs/heads/main/label.png" alt="Corporate Brochure">
                         <div class="project-info">
                             <h4>Corporate Brochure</h4>
                             <p>Print Design</p>
